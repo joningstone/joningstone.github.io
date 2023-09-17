@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<TITLE>Kalkulator plinov</TITLE>
+		<STYLE>
+			BODY {
+				color: white;
+				font-family: Calibri;
+			}
+			
+			.gumb {
+				color: white;
+				border-color: white;
+				background-color: brown;
+				height: 50px;
+				width: 90px;
+			}
+			
+			.vnosno-polje {
+				color: white;
+				border-style: solid;
+				border-color: white;
+				background-color: brown;
+				width: 90px;
+			}
+		</STYLE>
+	</HEAD>
+	<BODY STYLE = "background-color:brown;">
+		<H1 STYLE = "text-align:center;">Kalkulator spremembe idealnih plinov</H1>
+		<DIV STYLE = "width:30vw;margin-left:auto;margin-right:auto;">
+			<FORM>
+				<DIV STYLE = "display:flex;">
+					<DIV STYLE = "float:left;">
+						<H2>Plin 1</H2>
+						<LABEL>tlak 1:</LABEL>
+						<INPUT TYPE = "number" ID = "tlak1" min = "0" CLASS = "vnosno-polje"></INPUT>
+						<LABEL>&nbsp;kPa</LABEL>
+						<BR/>
+						<BR/>
+						<LABEL>volumen 1:</LABEL>
+						<INPUT TYPE = "number" ID = "volumen1" min = "0" CLASS = "vnosno-polje"></INPUT>
+						<LABEL>&nbsp;L</LABEL>
+						<BR/>
+						<BR/>
+						<LABEL>temperatura 1:</LABEL>
+						<INPUT TYPE = "number" ID = "temperatura1" min = "0" CLASS = "vnosno-polje"></INPUT>
+						<LABEL>&nbsp;K</LABEL>
+					</DIV>
+					<DIV STYLE = "float:left;margin-left:30px;">
+						<H2>Plin 2</H2>
+						<LABEL>tlak 2:</LABEL>
+						<INPUT TYPE = "number" ID = "tlak2" min = "0" CLASS = "vnosno-polje"></INPUT>
+						<LABEL>&nbsp;kPa</LABEL>
+						<BR/>
+						<BR/>
+						<LABEL>volumen 2:</LABEL>
+						<INPUT TYPE = "number" ID = "volumen2" min = "0" CLASS = "vnosno-polje"></INPUT>
+						<LABEL>&nbsp;L</LABEL>
+						<BR/>
+						<BR/>
+						<LABEL>temperatura 2:</LABEL>
+						<INPUT TYPE = "number" ID = "temperatura2" min = "0" CLASS = "vnosno-polje"></INPUT>
+						<LABEL>&nbsp;K</LABEL>
+					</DIV>
+				</DIV>
+				<DIV STYLE = "width:25vw;text-align:center;padding-top:20px;">
+					<BUTTON onclick = "izracunIdealnegaPlina();" CLASS = "gumb">Izračunaj</BUTTON>
+					&nbsp;
+					&nbsp;
+					<INPUT TYPE = "reset" CLASS = "gumb"></INPUT>
+				</DIV>	
+			</FORM>
+			<STRONG STYLE = "color:red;"></STRONG>
+
+		</DIV>
+		<SCRIPT SRC = "funkcije_izracun.js"></SCRIPT>
+	</BODY>
+</HTML>
