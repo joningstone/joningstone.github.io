@@ -1,2 +1,2 @@
 # joningstone.github.io
-Kemijske informacije
+Razne strani
